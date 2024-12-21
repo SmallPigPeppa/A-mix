@@ -1,0 +1,152 @@
+[
+  {
+    "id": "140031996X",
+    "image": "ocr_vqa/images/140031996X.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWho is the author of this book?\nAnswer the question using a single word or phrase."
+      },
+      {
+        "from": "gpt",
+        "value": "H. Jackson Brown"
+      },
+      {
+        "from": "old-model",
+        "value": "Jackson brown"
+      },
+      {
+        "from": "human",
+        "value": "What is the title of this book?"
+      },
+      {
+        "from": "gpt",
+        "value": "Life's Little Instruction Book: Simple Wisdom and a Little Humor for Living a Happy and Rewarding Life"
+      },
+      {
+        "from": "old-model",
+        "value": "Life's little instruction book"
+      },
+      {
+        "from": "human",
+        "value": "What is the genre of this book?"
+      },
+      {
+        "from": "gpt",
+        "value": "Humor & Entertainment"
+      },
+      {
+        "from": "old-model",
+        "value": "Self help"
+      },
+      {
+        "from": "human",
+        "value": "Is this a comedy book?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes"
+      },
+      {
+        "from": "old-model",
+        "value": "No"
+      }
+    ]
+  },
+  {
+    "id": "877193207",
+    "image": "ocr_vqa/images/877193207.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWho wrote this book?\nAnswer the question using a single word or phrase."
+      },
+      {
+        "from": "gpt",
+        "value": "Charles E. Finsley"
+      },
+      {
+        "from": "old-model",
+        "value": "Charles d finley"
+      },
+      {
+        "from": "human",
+        "value": "What is the title of this book?"
+      },
+      {
+        "from": "gpt",
+        "value": "Discover Texas Dinosaurs: Where They Lived, How They Lived, and the Scientists Who Study Them"
+      },
+      {
+        "from": "old-model",
+        "value": "Discover texas dinosaurs"
+      },
+      {
+        "from": "human",
+        "value": "What type of book is this?"
+      },
+      {
+        "from": "gpt",
+        "value": "Science & Math"
+      },
+      {
+        "from": "old-model",
+        "value": "Dinosaurs"
+      },
+      {
+        "from": "human",
+        "value": "Is this book related to Science & Math?"
+      },
+      {
+        "from": "gpt",
+        "value": "No"
+      },
+      {
+        "from": "old-model",
+        "value": "Yes"
+      }
+    ]
+  },
+  {
+    "id": "9812586830",
+    "image": "ocr_vqa/images/9812586830.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWho is the author of this book?\nAnswer the question using a single word or phrase."
+      },
+      {
+        "from": "gpt",
+        "value": "Insight Guides"
+      },
+      {
+        "from": "old-model",
+        "value": "Unknown"
+      },
+      {
+        "from": "human",
+        "value": "What is the title of this book?"
+      },
+      {
+        "from": "gpt",
+        "value": "Jamaica (Insight Guides)"
+      },
+      {
+        "from": "old-model",
+        "value": "Jamaica"
+      },
+      {
+        "from": "human",
+        "value": "What type of book is this?"
+      },
+      {
+        "from": "gpt",
+        "value": "Travel"
+      },
+      {
+        "from": "old-model",
+        "value": "Travel guide"
+      }
+    ]
+  }
+]
