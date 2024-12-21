@@ -5,6 +5,8 @@ from tqdm import tqdm
 from openai import OpenAI
 from prompt import rule_description
 from concurrent.futures import ThreadPoolExecutor, as_completed
+import threading
+
 
 
 def parse_args():
@@ -87,14 +89,14 @@ def process_data(data, args):
         base_url=args.base_url,
         api_key=args.api_key
     )
-    improved_data = []
+    processed_ids = check_processed_ids(args.output_file)
     with ThreadPoolExecutor(max_workers=args.max_workers) as executor:
-        future_to_item = {executor.submit(process_item, client, item, args): item for item in data}
-        for future in tqdm(as_completed(future_to_item), total=len(data), desc="Processing"):
+        future_to_item = {executor.submit(process_item, client, item, args): item for item in data if item['id'] not in processed_ids}
+        for future in tqdm(as_completed(future_to_item), total=len(future_to_item), desc="Processing"):
             result = future.result()
-            if result is not None:  # Only append if result is not None
-                improved_data.append(result)
-    return improved_data
+            if result is not None:
+                append_to_file(args.output_file, result)
+
 
 
 
@@ -109,11 +111,37 @@ def save_data(output_file, data):
     print(f"\nProcessing completed. Results have been written to: {output_file}")
 
 
+lock = threading.Lock()
+
+
+def check_processed_ids(output_file):
+    if os.path.exists(output_file):
+        with open(output_file, 'r', encoding='utf-8') as file:
+            data = json.load(file)
+            processed_ids = {item['id'] for item in data}
+            return processed_ids
+    return set()
+
+
+def append_to_file(output_file, data):
+    with lock:
+        if not os.path.exists(output_file):
+            os.makedirs(os.path.dirname(output_file), exist_ok=True)
+            with open(output_file, 'w', encoding='utf-8') as file:
+                json.dump([], file, ensure_ascii=False, indent=2)  # Initialize file with empty list if not exists
+
+        with open(output_file, 'r+', encoding='utf-8') as file:
+            file_data = json.load(file)
+            file_data.append(data)
+            file.seek(0)
+            json.dump(file_data, file, ensure_ascii=False, indent=2)
+            file.truncate()
+
+
 def main():
     args = parse_args()
     data = load_data(args.input_file)
-    improved_data = process_data(data, args)
-    save_data(args.output_file, improved_data)
+    process_data(data, args)
 
 
 if __name__ == "__main__":
