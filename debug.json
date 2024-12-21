@@ -33,21 +33,21 @@
       },
       {
         "from": "gpt",
-        "value": "The updated answers for the author and title provide more specific and accurate information compared to the old answers. For the author, the old answer was 'Unknown', while the updated answer is 'Insight Guides'. For the title, the old answer was just 'Jamaica', while the updated answer is 'Jamaica (Insight Guides)'. For the type of book, the old answer was 'Travel guide', while the updated answer is 'Travel'. The updated answers are more complete and contextually appropriate."
+        "value": "1. The updated answer for the author is presented as 'Insight Guides', while the old answer was uncertain and marked as 'Unknown'.\n2. The updated answer for the title is 'Jamaica (Insight Guides)', which includes the series name 'Insight Guides', while the old answer only mentioned 'Jamaica'.\n3. The updated answer for the type of book is simply 'Travel', whereas the old answer was more specific and stated it as a 'Travel guide'."
       },
       {
         "from": "human",
-        "value": "Generate description for the image based on the updated and old answers, and evaluate relevance between them with a score (0–10)."
+        "value": "Generate description for the image based on the updated and old answers, respectively. Evaluate relevance between them with a score (0–10)."
       },
       {
         "from": "gpt",
-        "value": "Updated description: The image is of a cover of the travel book 'Jamaica (Insight Guides)' authored by Insight Guides, providing detailed guidance for travelers. Old description: The image is of a book cover titled 'Jamaica', with the author being unknown but it is a travel guide. Relevance score: 8. Both descriptions are fairly relevant but the updated description provides more specific and accurate information."
+        "value": "Updated answers description: An 'Insight Guides' travel book titled 'Jamaica (Insight Guides)'. Old answers description: A book titled 'Jamaica' with an unknown author, likely a travel guide.\nThe relevance between the descriptions is high, both highlighting the book's nature as a travel guide on Jamaica. Score: 9/10."
       }
     ]
   },
   {
-    "id": "123456",
-    "image": "path_to_image/123456.jpg",
+    "id": "140031996X",
+    "image": "ocr_vqa/images/140031996X.jpg",
     "conversations": [
       {
         "from": "human",
@@ -87,15 +87,15 @@
       },
       {
         "from": "gpt",
-        "value": "1. The author's name is specified as 'Charles E. Finsley' in the updated answer, whereas the old answer provides 'Charles d finley'.\n2. The title of the book is provided in full in the updated answer: 'Discover Texas Dinosaurs: Where They Lived, How They Lived, and the Scientists Who Study Them', whereas the old answer only provides 'Discover texas dinosaurs'.\n3. The type of book is classified as 'Science & Math' in the updated answer, whereas the old answer suggests 'Dinosaurs'.\n4. The updated answer specifies that the book is not related to Science & Math, while the old answer incorrectly suggests it is related to Science & Math."
+        "value": "The differences include: 1) Author: 'Charles d finley' vs. 'Charles E. Finsley'. 2) Title: 'Discover texas dinosaurs' vs. 'Discover Texas Dinosaurs: Where They Lived, How They Lived, and the Scientists Who Study Them'. 3) Type: 'Dinosaurs' vs. 'Science & Math'. 4) Related to Science & Math: 'Yes' vs. 'No'."
       },
       {
         "from": "human",
-        "value": "Generate description for the image based on the updated and old answers, and evaluate relevance between them with a score (0–10)."
+        "value": "Generate description for the image based on the updated and old answers, respectively. Evaluate relevance between them with a score (0–10)."
       },
       {
         "from": "gpt",
-        "value": "The image describes a book titled 'Discover Texas Dinosaurs' written by Charles E. Finsley, which focuses on Science & Math. The old answer description is quite similar but less detailed, giving a relevance score of 8 out of 10."
+        "value": "Updated Answer Description: The image is a book titled 'Discover Texas Dinosaurs: Where They Lived, How They Lived, and the Scientists Who Study Them', authored by Charles E. Finsley, classified under 'Science & Math'.\nOld Answer Description: The image is a book titled 'Discover texas dinosaurs', authored by Charles d finley, mainly about 'Dinosaurs'.\nEvaluation Score: 9/10 (Highly relevant with slight discrepancies on author's name and book title's detail)."
       }
     ]
   },
@@ -105,7 +105,7 @@
     "conversations": [
       {
         "from": "human",
-        "value": "<image>\nWho is the author of this book? Old answer is 'Jackson brown'.\nAnswer the question using a single word or phrase."
+        "value": "<image>\nWho is the author of this book?, Old answer is 'Jackson brown'.\nAnswer the question using a single word or phrase."
       },
       {
         "from": "gpt",
@@ -113,7 +113,7 @@
       },
       {
         "from": "human",
-        "value": "What is the title of this book? Old answer is 'Life's little instruction book'."
+        "value": "What is the title of this book?, Old answer is 'Life's little instruction book'."
       },
       {
         "from": "gpt",
@@ -121,7 +121,7 @@
       },
       {
         "from": "human",
-        "value": "What is the genre of this book? Old answer is 'Self help'."
+        "value": "What is the genre of this book?, Old answer is 'Self help'."
       },
       {
         "from": "gpt",
@@ -129,7 +129,7 @@
       },
       {
         "from": "human",
-        "value": "Is this a comedy book? Old answer is 'No'."
+        "value": "Is this a comedy book?, Old answer is 'No'."
       },
       {
         "from": "gpt",
@@ -141,15 +141,15 @@
       },
       {
         "from": "gpt",
-        "value": "The updated answer includes a full and complete title with its detailed description, whereas the old answer provided a partial and vague title. The author's full name (H. Jackson Brown) was provided in the updated answer, while the old answer lacked the initial 'H.' The genre of the book differs in the updated answer (Humor & Entertainment) compared to the old answer (Self help). Lastly, the updated answer classified the book as comedy, contrasting with the old answer which stated it is not a comedy book."
+        "value": "The updated answers provide full names and more detailed information. For the author, 'Jackson brown' has been corrected to 'H. Jackson Brown'. For the title, the old answer 'Life's little instruction book' is expanded to 'Life's Little Instruction Book: Simple Wisdom and a Little Humor for Living a Happy and Rewarding Life'. The book's genre changed from 'Self help' to 'Humor & Entertainment'. Additionally, the answer to whether it is a comedy book changed from 'No' to 'Yes' based on the updated information."
       },
       {
         "from": "human",
-        "value": "Generate description for the image based on the updated and old answers, and evaluate relevance between them with a score (0–10)."
+        "value": "Generate description for the image based on the updated and old answers, respectively. Evaluate relevance between them with a score (0–10)."
       },
       {
         "from": "gpt",
-        "value": "Updated description: A book titled 'Life's Little Instruction Book' by H. Jackson Brown, with the description: 'Simple Wisdom and a Little Humor for Living a Happy and Rewarding Life'. The book's genre is Humor & Entertainment and it features comedy. The image likely shows a book cover with these characteristics. \nOld description: A book titled 'Life's little instruction book' by Jackson Brown; the previous answers suggested it is a Self Help book, not comedy. The relevance score between the updated and old descriptions is 7 out of 10, as both descriptions refer to the same book but have variations in naming and genre classification."
+        "value": "Based on the updated answers, the image likely shows a book titled 'Life's Little Instruction Book: Simple Wisdom and a Little Humor for Living a Happy and Rewarding Life', authored by H. Jackson Brown, categorized under Humor & Entertainment, and includes comedic elements. The old answers suggest a book titled 'Life's little instruction book', authored by Jackson Brown, categorized under Self help, and does not indicate comedic elements. The relevance score is 7, as the core content (title, author) is the same, but the genre and comedic nature are different between the old and updated answers."
       }
     ]
   }

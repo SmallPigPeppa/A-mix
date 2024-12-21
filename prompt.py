@@ -82,7 +82,7 @@ Demo output：
     },
     {
       "from": "human",
-      "value": "Generate description for the image based on the updated and old answers, and evaluate relevance between them with a score (0–10)."
+      "value": "Generate description for the image based on the updated and old answers, respectively. Evaluate relevance between them with a score (0–10)."
     },
     {
       "from": "gpt",
